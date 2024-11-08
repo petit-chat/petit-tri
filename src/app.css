@@ -1,0 +1,13 @@
+:root {
+  color-scheme: light dark;
+  background-color: #242424;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+}
+
+#app {
+  margin: auto;
+}
