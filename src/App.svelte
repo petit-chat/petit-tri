@@ -27,7 +27,8 @@
 
 <main>
   {#if urls.length === 0}
-    <input type="file" onchange={handleFileUpload} />
+    <h1>watch and triage video urls</h1>
+    <input id="file" type="file" onchange={handleFileUpload} aria-label="upload url list" />
   {:else if urls.length > i}
     <h1>{urls.length - i} left</h1>
     <iframe title="video to check" src={urls[i]}></iframe>
@@ -46,7 +47,6 @@
 
 <style>
   h1 {
-    text-align: center;
     margin-bottom: 5rem;
   }
 
